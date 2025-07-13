@@ -13,8 +13,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Alabania",
-  description: "A site for documenting Alabania",
+  title: "Alabania 💍",
+  description: "Celebrating the engagement of Ala and Harry ",
 };
 
 export default function RootLayout({

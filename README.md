@@ -31,12 +31,16 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 
 ## Deployment
 
-Project is hosted on Firebase. It is setup to auto deploy when merges are made to main branch.
+Project is hosted on Firebase (see [https://alabania.web.app/](https://alabania.web.app/)). It is setup to auto deploy when merges are made to main branch using GitHub actions. Static assets are built to out/ folder
 
-Static assets are served to out/ folder
-
+Build latest and view preview
 ``` sh
-npm run build
-firebase hosting:channel:deploy preview_name
-firebase deploy --only hosting
+npm run build && firebase hosting:channel:deploy preview_name
 ```
+
+Build latest and deploy
+``` sh
+npm run build && firebase deploy --only hosting
+```
+
+If deployments don't seem to be the updating, the previous page may be cached. Use incognito to look for changes or shift refresh the web page.
