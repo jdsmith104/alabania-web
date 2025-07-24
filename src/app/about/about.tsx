@@ -4,13 +4,13 @@ import styles from "./about.module.css"
 export default function About() {
     return (
         <div>
-            <div className={styles["about-page"]} >
+            <div className={styles["about-page"]}  >
                 <h2>Welcome to Alabania</h2>
-                <p>Alabania is a fictional country created by Jacob, a 16-year-old developer. It is a place where creativity and imagination come together to form a unique digital experience.</p>
+                <p>Alabania is the slightly wacky brain child of Emily, Ethan, and Jacob - dreamed up to celebrate the inevitable engagement of Ala and Harry after 9 years of top-tier coupledom! (Yes, nine. We checked the calendar twice.)</p>
                 <p>Thank you for visiting Alabania. We hope you enjoy your stay!</p>
                 <footer className="mt-4">
-                    <p>Created by Copilot</p>
-                    <p>© 2023 Alabania</p>
+                    <p>Created by Copilot and powered by AWS (jk)</p>
+                    <p>© 2025 Alabania</p>
                 </footer>
             </div>
             <HomeLink />
