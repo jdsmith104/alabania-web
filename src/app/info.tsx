@@ -10,7 +10,7 @@ export default function OpeningVideo() {
   const makeCard = (title: string, link: string, key: number, onClick?: () => void) => {
     return (
       <div className={styles["link-card"]} key={key} onClick={onClick} hidden={!siteEntered}>
-        <h2>{title} <Link href={`/${link}`}>this page!</Link></h2>
+        <h2><Link href={`/${link}`}>{title} </Link></h2>
       </div>
     );
   }
