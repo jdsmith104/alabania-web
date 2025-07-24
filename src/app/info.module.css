@@ -1,0 +1,23 @@
+/* Styles for OpeningVideo/info.tsx */
+.centered-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 60vh;
+}
+
+.link-card {
+    margin-top: 2rem;
+    padding: 1.5rem 2rem;
+    border-radius: 1rem;
+    background: #d0b7fd;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.07);
+    min-width: 300px;
+    min-height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0.9;
+    transition: opacity 0.3s ease;
+}
