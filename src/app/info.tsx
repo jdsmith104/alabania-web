@@ -10,8 +10,8 @@ export default function OpeningVideo() {
   const makeCard = (title: string, link: string, key: number, onClick?: () => void) => {
     return (
       <div className={styles["link-card"]} key={key} onClick={onClick} hidden={!siteEntered}>
-        <h2><Link href={`/${link}`}>{title} </Link></h2>
-      </div>
+        <h2><Link href={link.includes("http") ? link : `/${link}`} > {title} </Link></h2>
+      </div >
     );
   }
 
@@ -21,8 +21,12 @@ export default function OpeningVideo() {
       link: "itinerary",
     },
     {
+      title: "Sites",
+      link: "https://maps.app.goo.gl/pgrmFAmukCt5KxgZ6",
+    },
+    {
       title: "FAQs",
-      link: "faqs",
+      link: "https://docs.google.com/document/d/130Xmkp_qUiL_KkIMj9MogFwS22kcnpVSjkyqOPV-87U/edit?usp=sharing",
     },
     {
       title: "Welcome video",
