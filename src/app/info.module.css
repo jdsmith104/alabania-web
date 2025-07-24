@@ -22,3 +22,18 @@
     transition: opacity 0.3s ease;
     font-size: x-large;
 }
+
+.home-link {
+    margin-top: 2rem;
+    padding: 0.5rem 0.5rem;
+    border-radius: 1rem;
+    background: #d0b7fd;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.07);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0.9;
+    transition: opacity 0.3s ease;
+    font-size: x-large;
+    margin: 15px;
+}
