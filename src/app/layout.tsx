@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Alabania 💍",
+  title: "Halabania 💍",
   description: "Celebrating the engagement of Ala and Harry ",
 };
 

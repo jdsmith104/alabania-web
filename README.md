@@ -31,7 +31,7 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 
 ## Deployment
 
-Project is hosted on Firebase (see [https://alabania.web.app/](https://alabania.web.app/)). It is setup to auto deploy when merges are made to main branch using GitHub actions. Static assets are built to out/ folder
+Project is hosted on Firebase (see [https://halabania.web.app/](https://halabania.web.app/)). It is setup to auto deploy when merges are made to main branch using GitHub actions. Static assets are built to out/ folder
 
 Build latest and view preview
 ``` sh
