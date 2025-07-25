@@ -1,4 +1,3 @@
-import Image from "next/image";
 import OpeningVideo from "./info";
 
 export default function Home() {
