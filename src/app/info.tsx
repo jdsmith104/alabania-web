@@ -17,33 +17,38 @@ export default function OpeningVideo() {
 
     const cards = [
         {
-            title: "Itinerary",
-            link: "itinerary",
+            title: "Itinerary 🕒",
+            link: "https://docs.google.com/document/d/1flFheVtD2NG1Olt98asraz54ntvPmkJ-0Qu2s2qf9EY/edit?usp=sharing",
             ready: true
         },
         {
-            title: "Map",
+            title: "Map 📍",
             link: "https://maps.app.goo.gl/pgrmFAmukCt5KxgZ6",
             ready: true
         },
         {
-            title: "FAQs",
+            title: "FAQs ❓",
             link: "https://docs.google.com/document/d/130Xmkp_qUiL_KkIMj9MogFwS22kcnpVSjkyqOPV-87U/edit?usp=sharing",
             ready: true
         },
         {
-            title: "Welcome video",
+            title: "Welcome video 🎬",
             link: "",
             onClick: () => setSiteEntered(false),
             ready: true
         },
         {
-            title: "About",
+            title: "About ℹ️",
             link: "about",
             ready: true
         },
         {
-            title: "Credits",
+            title: "Upload Pics 📷",
+            link: "https://1drv.ms/f/c/812e6d85c470395e/EnQaanmD9cNDshuZk7G0lEIBy2WT7soWXLnyQKt3QZvxsg?e=CM0ncU",
+            ready: true
+        },
+        {
+            title: "Credits 🎉",
             link: "credits",
             ready: false
         }
