@@ -8,7 +8,7 @@ export default function OpeningVideo() {
 
     const now = new Date();
 
-    const unlockSiteDate = new Date(Date.UTC(2025, 6, 26, 0, 0, 1)); // July is month 6 (0-based), 17:00 UTC = 18:00 BST
+    const unlockSiteDate = new Date(Date.UTC(2025, 6, 25, 0, 0, 1)); // July is month 6 (0-based), 17:00 UTC = 18:00 BST
 
     const [siteEntered, setSiteEntered] = useState(now > unlockSiteDate);
 
