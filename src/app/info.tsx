@@ -5,7 +5,12 @@ import styles from "./info.module.css";
 import Link from 'next/link';
 
 export default function OpeningVideo() {
-    const [siteEntered, setSiteEntered] = useState(true);
+
+    const now = new Date();
+
+    const unlockSiteDate = new Date(Date.UTC(2025, 6, 26, 0, 0, 1)); // July is month 6 (0-based), 17:00 UTC = 18:00 BST
+
+    const [siteEntered, setSiteEntered] = useState(now > unlockSiteDate);
 
     const makeCard = (title: string, link: string, key: number, ready: boolean, onClick?: () => void) => {
         return (
@@ -15,11 +20,14 @@ export default function OpeningVideo() {
         );
     }
 
+    // 6pm BST (UTC+1) on 25th July 2025
+    const itineraryUnlock = new Date(Date.UTC(2025, 6, 25, 17, 0, 0)); // July is month 6 (0-based), 17:00 UTC = 18:00 BST
+
     const cards = [
         {
             title: "Itinerary 🕒",
             link: "https://docs.google.com/document/d/1flFheVtD2NG1Olt98asraz54ntvPmkJ-0Qu2s2qf9EY/edit?usp=sharing",
-            ready: true
+            ready: now > itineraryUnlock
         },
         {
             title: "Map 📍",
@@ -56,7 +64,7 @@ export default function OpeningVideo() {
 
     return (
         <div className={styles["centered-container"]}>
-            <iframe className={styles["iframe"]} hidden={siteEntered} height="315" src="https://www.youtube.com/embed/FwMyLui2nrM?si=0q_h2NtL2kKCNtwC" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
+            <iframe className={styles["iframe"]} hidden={siteEntered} height="315" src="https://www.youtube.com/embed/FwMyLui2nrM?si=0q_h2NtL2kKCNtwC" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
             <button hidden={siteEntered} className={styles["home-link"]} onClick={() => setSiteEntered(true)}>Continue to site</button>
             {cards.map((card, index) => (
                 makeCard(card.title, card.link, index, card.ready, card.onClick)
